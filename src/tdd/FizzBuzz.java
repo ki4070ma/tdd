@@ -2,17 +2,18 @@ package tdd;
 
 public class FizzBuzz {
 
-	public String say(int i) {
-		boolean isNumMod5Equals0 = (i%5 == 0);
-		if( isNumMod5Equals0 && i%3 == 0 ) {
+	public String say(int num) {
+		boolean isNumMod5Equals0 = (num%5 == 0);
+		boolean isNumMod3Equals0 = (num%3 == 0);
+		if( isNumMod5Equals0 && isNumMod3Equals0) {
 			return "FizzBuzz";
 		}
 		if( isNumMod5Equals0 ) {
 			return "Buzz";
 		}
-		if( i%3 == 0 ) {
+		if( isNumMod3Equals0 ) {
 			return "Fizz";
 		}
-		return String.valueOf(i);
+		return String.valueOf(num);
 	}
 }
