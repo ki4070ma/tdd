@@ -10,7 +10,7 @@ import static org.hamcrest.core.IsNull.*;
 
 public class FizzBuzzTest {
 	@Test
-	public void test() {
-		fail("‚Ü‚¾À‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
+	public void ”š‚ª3‚Ì”{”‚ÌFizz‚Æ•Ô‚·() {
+		FizzBuzz fizzbuzz = new FizzBuzz();
 	}
 }
