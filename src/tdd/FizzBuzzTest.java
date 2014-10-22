@@ -37,5 +37,6 @@ public class FizzBuzzTest {
 	@Test
 	public void ”š‚ª3‚Ì”{”‚Å‚à5‚Ì”{”‚Å‚à‚È‚¢‚É‚Í‚»‚Ì”š‚Ì•¶š—ñ‚ğ•Ô‚·() {
 		assertThat(fizzbuzz.say(2), is("2"));
+		assertThat(fizzbuzz.say(7), is("7"));
 	}
 }
