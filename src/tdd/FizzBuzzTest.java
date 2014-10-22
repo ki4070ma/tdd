@@ -39,4 +39,14 @@ public class FizzBuzzTest {
 		assertThat(fizzbuzz.say(2), is("2"));
 		assertThat(fizzbuzz.say(7), is("7"));
 	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void 数字が0の場合は引数例外をスローする() {
+		fizzbuzz.say(0);
+	}
+
+	@Test(expected=IllegalArgumentException.class)
+	public void 数字が負数の場合は引数例外をスローする() {
+		fizzbuzz.say(-3);
+	}
 }
