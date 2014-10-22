@@ -33,4 +33,9 @@ public class FizzBuzzTest {
 		assertThat(fizzbuzz.say(15), is("FizzBuzz"));
 		assertThat(fizzbuzz.say(30), is("FizzBuzz"));
 	}
+	
+	@Test
+	public void ”š‚ª3‚Ì”{”‚Å‚à5‚Ì”{”‚Å‚à‚È‚¢‚É‚Í‚»‚Ì”š‚Ì•¶š—ñ‚ğ•Ô‚·() {
+		assertThat(fizzbuzz.say(2), is("2"));
+	}
 }
